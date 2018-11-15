@@ -1,0 +1,12 @@
+parcelRequire=function(e,r,n,t){var i="function"==typeof parcelRequire&&parcelRequire,o="function"==typeof require&&require;function u(n,t){if(!r[n]){if(!e[n]){var f="function"==typeof parcelRequire&&parcelRequire;if(!t&&f)return f(n,!0);if(i)return i(n,!0);if(o&&"string"==typeof n)return o(n);var c=new Error("Cannot find module '"+n+"'");throw c.code="MODULE_NOT_FOUND",c}p.resolve=function(r){return e[n][1][r]||r},p.cache={};var l=r[n]=new u.Module(n);e[n][0].call(l.exports,p,l,l.exports,this)}return r[n].exports;function p(e){return u(p.resolve(e))}}u.isParcelRequire=!0,u.Module=function(e){this.id=e,this.bundle=u,this.exports={}},u.modules=e,u.cache=r,u.parent=i,u.register=function(r,n){e[r]=[function(e,r){r.exports=n},{}]};for(var f=0;f<n.length;f++)u(n[f]);if(n.length){var c=u(n[n.length-1]);"object"==typeof exports&&"undefined"!=typeof module?module.exports=c:"function"==typeof define&&define.amd?define(function(){return c}):t&&(this[t]=c)}return u}({"vY3e":[function(require,module,exports) {
+
+},{}],"UJ9T":[function(require,module,exports) {
+module.exports="sample1.38d2fdd9.jpg";
+},{}],"/EEE":[function(require,module,exports) {
+"use strict";var e=t(require("../img/sample1.jpg"));function t(e){return e&&e.__esModule?e:{default:e}}var i=document.getElementById("odmm"),n=i.getContext("2d"),a=document.getElementById("analyze"),d=a.getContext("2d"),m=document.getElementById("view"),r=200,o=[];o.time=1;var g=new Image;g.src=e.default,g.onload=function(){h(),window.requestAnimationFrame(u)};var h=function(){var e=m.clientWidth;i.width=e,i.height=r,a.width=e,a.height=719;var t=e/g.width;g.width*=t,g.height*=t,d.drawImage(g,0,0,g.width,g.height)},u=function e(){for(var t=d.getImageData(0,o.time,a.width,1),i=0;i<r;i++)n.putImageData(t,0,i);o.time--,0==o.time&&(o.time=g.height-1),window.requestAnimationFrame(e)};
+},{"../img/sample1.jpg":"UJ9T"}],"g68U":[function(require,module,exports) {
+module.exports={odmm:require("./odmm.js")};
+},{"./odmm.js":"/EEE"}],"A2T1":[function(require,module,exports) {
+"use strict";require("reset-css"),require("./style.sass"),require("./js/*.js");
+},{"reset-css":"vY3e","./style.sass":"vY3e","./js/*.js":"g68U"}]},{},["A2T1"], null)
+//# sourceMappingURL=app.bbcadbf0.map

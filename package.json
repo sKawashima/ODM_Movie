@@ -10,5 +10,9 @@
   },
   "dependencies": {
     "reset-css": "^4.0.1"
-  }
+  },
+  "scripts": {
+  "dev": "parcel front/index.pug --open",
+  "github-build": "parcel build front/index.pug --public-url ./ -d docs"
+}
 }

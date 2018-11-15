@@ -1,4 +1,4 @@
 import 'reset-css'
 import './style.sass'
 
-import './script/*.js'
+import './js/*.js'
