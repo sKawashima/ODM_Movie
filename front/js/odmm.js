@@ -16,12 +16,8 @@ const img = new Image()
 img.src = sample1
 
 img.onload = () => {
-  // Promise.resolve() // 順番に処理
-  //  .then(matchSize)
-  //  .then(draw)
  matchSize()
  window.requestAnimationFrame(draw)
- // draw()
 }
 
 const matchSize = () => {
