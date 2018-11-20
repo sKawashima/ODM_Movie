@@ -3,6 +3,14 @@
 ## Demo
 https://skawashima.github.io/ODM_Movie/
 
+## Usage
+```shell
+npm install
+# 初回のみ
+
+npm run dev
+```
+
 ## Algorithm
 1. js側で画像をロード
 2. canvas#analyze(display:none)に画像を解像度をあわせて描写
